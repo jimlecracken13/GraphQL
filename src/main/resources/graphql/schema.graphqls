@@ -1,0 +1,16 @@
+type Query{
+    enseignantById(id: ID): Enseignant
+    coursById(id: ID): Cours
+
+}
+
+type Enseignant{
+    id: ID
+    nom: String
+    prenom: String
+}
+type Cours{
+    id: ID
+    nom: String
+    enseignant: Enseignant
+}
