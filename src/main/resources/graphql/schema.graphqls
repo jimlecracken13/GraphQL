@@ -3,7 +3,10 @@ type Query{
     coursById(id: ID): Cours
 
 }
-
+type Mutation{
+    createEnseignant(nom: String!, prenom: String!): Enseignant
+    createCours(nom: String!): Cours
+}
 type Enseignant{
     id: ID
     nom: String
